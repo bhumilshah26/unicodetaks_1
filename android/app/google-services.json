@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "80832937145",
-    "project_id": "hotbook-e9dce",
-    "storage_bucket": "hotbook-e9dce.appspot.com"
+    "project_number": "61487751435",
+    "project_id": "hotbook-660fd",
+    "storage_bucket": "hotbook-660fd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:80832937145:android:58017c8370eded5fbbef68",
+        "mobilesdk_app_id": "1:61487751435:android:d2e9335f3622c0c5f2820e",
         "android_client_info": {
           "package_name": "com.example.hotbook"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDtyV1Riky_PQ248YTYuoNvdpeaF_T3omM"
+          "current_key": "AIzaSyADYzQohoa9RCroGStzSFrhQmrDEN5Z-8A"
         }
       ],
       "services": {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotbook/Login.dart';
+import 'package:hotbook/SignIn.dart';
 
 class BookingDetails extends StatefulWidget {
   const BookingDetails({super.key});
@@ -29,17 +29,71 @@ class _BookingDetailsState extends State<BookingDetails> {
       body: Column(
         children: [
           const SizedBox(height: 20,),
-          reusableTextField('Name', Icons.account_circle, false,nameCtrl),
+          TextField(
+            controller: nameCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.account_circle),
+              hintText: 'Name',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           const SizedBox(height: 30,),
-          reusableTextField('Phone number', Icons.call, false,phoneCtrl),
+          TextField(
+            controller: phoneCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.call),
+              hintText: 'Phone Number',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           const SizedBox(height: 30,),
-          reusableTextField('Email(optional)', Icons.mail_outline, false,emailCtrl),
+          TextField(
+            controller: emailCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.mail_outline),
+              hintText: 'Email',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           const SizedBox(height: 30,),
-          reusableTextField('Check-IN(DD-MM-YYYY)', Icons.calendar_month, false,chkinCtrl),
+          TextField(
+            controller: chkinCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.calendar_month),
+              hintText: 'Check-IN(DD-MM-YYYY)',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           const SizedBox(height: 30,),
-          reusableTextField('Check-OUT', Icons.calendar_month, false,chkoutCtrl),
+          TextField(
+            controller: chkoutCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.calendar_month),
+              hintText: 'Check-Out(DD-MM-YYYY)',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           const SizedBox(height: 30,),
-          reusableTextField('Payment', Icons.monetization_on_sharp, false,payCtrl),
+          TextField(
+            controller: payCtrl,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.monetization_on_sharp),
+              hintText: 'Payment',
+              hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.5)
+              ),
+            ),
+          ),
           SizedBox(height: size.height * 0.15,),
           Center(
             child:ElevatedButton(

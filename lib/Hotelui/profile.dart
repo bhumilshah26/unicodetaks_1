@@ -43,7 +43,6 @@ class Profile extends StatelessWidget {
                     onPressed: (){}, child: const Text('Logout',style: TextStyle(color: Colors.black),))
               ],
             )
-
           ],
         ),
       ),

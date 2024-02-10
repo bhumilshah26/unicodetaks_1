@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:hotbook/Login.dart';
+import 'package:hotbook/widgettree.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -14,7 +13,6 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Set a timer to navigate to the main screen after a specific time (e.g., 3 seconds).
     where();
   }
 
@@ -39,9 +37,9 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> where() async{
-    Timer(const Duration(seconds: 10), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const LoginPage()),
+        MaterialPageRoute(builder: (context) => const WidgetTree()),
       );
     });
   }
